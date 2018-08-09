@@ -1,52 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-	
-<head>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz-v00202681.js"></script>
+		<link rel="stylesheet" href="main.css">
+    <title>Home</title>
+	</head>
+	<body>
+		<section id="main-content" class="box-2 col-sm-12 text-center text-white font-weight-bold w-100">
+      <h1 class="text-center text-white font-weight-bold p-2">APP NOME</h1>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz-v00202681.js"></script>
-	
-	<style type="text/css">
-		.progressbarplay {
-			cursor:pointer;overflow: hidden;height: 8px;margin-bottom: 8px;background-color: #F7F7F7;background-image: -moz-linear-gradient(top,whiteSmoke,#F9F9F9);background-image: -ms-linear-gradient(top,whiteSmoke,#F9F9F9);background-image: -webkit-gradient(linear,0 0,0 100%,from(whiteSmoke),to(#F9F9F9));background-image: -webkit-linear-gradient(top,whiteSmoke,#F9F9F9);background-image: -o-linear-gradient(top,whiteSmoke,#F9F9F9);background-image: linear-gradient(top,whiteSmoke,#F9F9F9);background-repeat: repeat-x;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5',endColorstr='#f9f9f9',GradientType=0);-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
-		}
-		.progressbarplay .bar {
-			cursor:pointer;background: #4496C6;width: 0;height: 8px;color: white;font-size: 12px;text-align: center;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);-moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-transition: width .6s ease;-moz-transition: width .6s ease;-ms-transition: width .6s ease;-o-transition: width .6s ease;transition: width .6s ease;
-		}
-	</style>
-</head>
-<body>
-<div id="dz-root"></div>
-<div id="player" style="width:100%;" align="center"></div>
-<br/>
-<div id="controlers">
- 
-	<input type="button" onclick="DZ.player.playPlaylist(4749228108); return false;" value="Play Sampa"/>
-	
-	<br/>
-	<input type="button" onclick="DZ.player.playRadio(203); return false;" value="Play Radio"/>
-	<input type="button" onclick="DZ.player.playSmartRadio(13); return false;" value="Play Smart Radio"/>
-	
-	<br/>
-	<input type="button" onclick="DZ.player.play(); return false;" value="play"/>
-	<input type="button" onclick="DZ.player.pause(); return false;" value="pause"/>
-	<input type="button" onclick="DZ.player.prev(); return false;" value="prev"/>
-	<input type="button" onclick="DZ.player.next(); return false;" value="next"/>
-	<br/>
-	<input type="button" onclick="DZ.player.setVolume(20); return false;" value="set Volume 20"/>
-	<input type="button" onclick="DZ.player.setVolume(80); return false;" value="set Volume 80"/>
-	
-	<br/><br/><br/>
-</div>
-<div id="slider_seek" class="progressbarplay" style="">
-  <div class="bar" style="width: 0%;"></div>
-</div>
-
-event_listener : <br/>
-<pre id="event_listener" style="height:100px;overflow:auto;"></pre>
-<script src="app.js"></script>
-</body>
-
+      <section id="img">
+      	<img src="/home/andreia/Desktop/mercadao-_-mercado-municipal-de-sao-paulo.jpg" alt="Mercadão" class="responsive pr-3 col-sm-6" width="250" height="150">
+      </section>
+      <p class="text-justify text-white font-weight-normal col-sm-12 pt-2">
+        O Mercadão é um importante prédio histórico e arquitetônico da cidade e se destaca como polo cultural e turístico. Curta a experiência musical que tem tudo a ver com esse lugar e aproveite!
+       </p>
+      <div id="dz-root"></div>
+      <div id="player" style="width: 100%;" align="center"></div>
+      <br/>
+      <div id="controlers">
+      	<input type="button" onclick="DZ.player.playPlaylist(4749228108); return false;" value="Playlist"/>
+      	<br/>
+      	<input type="button" onclick="DZ.player.play(); return false;" value="play"/>
+      	<input type="button" onclick="DZ.player.pause(); return false;" value="pause"/>
+      	<input type="button" onclick="DZ.player.prev(); return false;" value="prev"/>
+      	<input type="button" onclick="DZ.player.next(); return false;" value="next"/>
+      	<br/>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
