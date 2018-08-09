@@ -12,8 +12,8 @@ DZ.init({
 		container : 'player',
 		cover : true,
 		playlist : true,
-		width : 410,
-		height : 300,
+		width : 230,
+		height : 200,
 		onload : onPlayerLoaded
 	}
 });
