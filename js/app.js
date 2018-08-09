@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('.box2').delay('1000').fadeIn('slow')
 	$("#controlers input").attr('disabled', true);
 	$("#slider_seek").click(function(evt,arg){
 		var left = evt.offsetX;
