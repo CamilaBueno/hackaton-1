@@ -1,12 +1,11 @@
 .box1{
- background-image: linear-gradient(#572461, #A02363);
+  background:#612361;
  color: White;
  font-size: calc(25px + 3vw);
  display: flex;
  justify-content: center;
  align-items: center;
 }
-
 .box2{
  display: none
 }
@@ -47,11 +46,19 @@ h1 {
 p {
   font-size: 3vw;
 }
-
-.navbar-toggler {
-  color: white;
-
+.navbar{
+  background-color: black;
 }
+.navbar button{
+  background-color: White;
+  }
+  
+  .navbar-toggler {
+    color: white;
+  
+  }
+
+
 .estrelas input[type=radio] {
  display: none;
 }
@@ -63,4 +70,23 @@ p {
 
 .estrelas input[type=radio]:checked ~ label i.fa:before {
  color: #CCC;
+}
+#map{
+	display: flex;
+	height: 80vh;
+	width: 100%;
+	max-width: 500px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.modal-body{
+  background-color: #6f70754f;
+}
+.modal-header{
+    background-color: purple;
+    color: white;
 }
