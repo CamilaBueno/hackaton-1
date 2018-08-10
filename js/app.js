@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	$('.box2').delay('1000').fadeIn('slow')
+	$('.box2').delay('3000').fadeIn('slow')
 	$("#controlers input").attr('disabled', true);
 	$("#slider_seek").click(function(evt,arg){
 		var left = evt.offsetX;
 		DZ.player.seek((evt.offsetX/$(this).width()) * 100);
-	});
+	})
 	$("a#map-pop").on("click", function () {
 		$('#myModal').modal({ show: true });
 	  });
